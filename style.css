@@ -19,8 +19,11 @@ header {
   letter-spacing: 0.3rem;
 }
 
+
+/* sidebar menu part */
 .checkbtn {
   top: 20px;
+  left:20px;
   margin-left: 1%;
   cursor: pointer;
   display: flex;
@@ -156,9 +159,32 @@ footer .p {
 
 
 /* Mobile Navbar */
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
   .checkbtn {
     display: block;
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .checkbtn i {
+    display: block;
+  }
+
+  #check:checked + .checkbtn i.fas.fa-bars {
+    display: none;
+  }
+
+  #check:checked + .checkbtn i.fas.fa-times {
+    display: block;
+  }
+
+
+  .fas.fa-times {
+    display: none;
   }
 
   .nav-links {
@@ -175,6 +201,7 @@ footer .p {
     z-index: 1;
     transition: all 0.5s ease;
   }
+
 
   #check:checked ~ .navbar .nav-links {
     display: flex;
@@ -195,10 +222,3 @@ footer .p {
     display: block;
   }
 }
-
-
-#check:checked ~ .nav-links {
-  display: flex;
-}  
- 
-

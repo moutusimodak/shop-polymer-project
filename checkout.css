@@ -332,7 +332,7 @@ body {
 
   .state-pin {
     display: flex;
-    gap: 1rem; /* Add gap for spacing */
+    gap: 1rem; 
   }
   .order-place {
     margin-top: 250px;

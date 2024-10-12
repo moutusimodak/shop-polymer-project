@@ -99,7 +99,7 @@
 
   @media (min-width: 1440px) {   /*Larger screen*/
 
-    /* for home page */
+
   
     .shop-heading {
       font-size: 24px; 
@@ -114,7 +114,6 @@
 @media (min-width: 768px) and (max-width: 1440px) {     /*medium screen*/
 
 
-    /* for home page */
     .shop-heading {
       font-size: 22px; 
     }
@@ -136,16 +135,13 @@
 
 @media screen and (max-width: 768px) {       /*Small screen*/
 
-    /* for home page */
+
   
     .navbar {
       margin-top: auto;
     }
   
-    .checkbtn {
-      display: block;
-    }
-  
+
     .nav-links {
       display: none;
       position: fixed;
