@@ -19,6 +19,11 @@ header {
   letter-spacing: 0.3rem;
 }
 
+header a{
+  text-decoration: none;
+  color: black;
+}
+
 
 /* sidebar menu part */
 .checkbtn {
