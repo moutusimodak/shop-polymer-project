@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="single-item.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="https://thumbs.dreamstime.com/z/shopping-bag-icon-vector-illustration-isolated-white-background-blue-paper-cartoon-graphic-271864256.jpg">
+</head>
+<body>
+  <header>
+    <h1 class="shop-heading">SHOP</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <div class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="item-listing-page.html"><i class="fa-solid fa-arrow-left arrow"></i></a>
+    </div>
+  
+ 
+  <!-- Navbar Section -->
+  <nav class="navbar">
+
+    <ul class="nav-links">
+      <li><a href="#">Men's Outerwear</a></li>
+      <li><a href="#">Ladies Outerwear</a></li>
+      <li><a href="#">Men's T-Shirts</a></li>
+      <li><a href="#" class="highlight">Ladies T-Shirts</a></li>
+    </ul>
+   
+  </nav>
+</header>
+
+  <!-- Single product section -->
+
+  <div class="container">
+    <div class="product-layout">
+        <div class="product-image">
+            <img src="images/10-15068B.jpg" alt="Product Image" class="img-fluid">
+        </div>
+        <div class="product-details">
+            <h2>Men's Tech Shell Full-Zip</h2>
+            <p class="price">$50.20</p>
+            
+            <form>
+             
+                 <hr>
+                <div class="form-group">
+                    <label for="size">Size</label>
+                    <select id="size" class="form-control">
+                        <option>XS</option>
+                        <option>S</option>
+                        <option selected>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        
+                    </select>
+                   
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <select id="quantity" class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      
+                  </select>
+                </div>
+                <hr>
+            </form>
+
+           
+          
+
+            <div class="description">
+                <h3>Description</h3>
+                <p>A versatile full-zip that you can wear all day long and even to the gym. This technical shell features moisture-wicking fabric, added stretch, and a hidden pocket for your smartphone or media player.</p>
+                <h3 class="desc-feature" >Features</h3>
+                <ul>
+                    <li>100% polyester.</li>
+                    <li>Smooth, technical front with textured mesh back.</li>
+                    <li>Drawstring bottom for adjustable fit.</li>
+                    <li>Raglan sleeves.</li>
+                    <li>Available in forest green with the white Google logo embroidered at left chest.</li>
+                </ul>
+            </div>
+
+            <a href="cart.html"><button class="btn">ADD TO CART</button></a>
+        </div>
+    </div>
+</div>
+
+  <footer class="single-page-footer">
+    <p class="single-page-footer">Made by Polymer</p>
+    <button class="polymer-btn">Demo Only</button>
+  </footer>
+
+
+</body>
+</html>

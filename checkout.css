@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+
+.main-container {
+  height: 100vh;
+  width: 90%;
+  padding: 1rem;
+}
+.menu img {
+  height: 1.5rem;
+}
+.cart-icon img {
+  height: 1.5rem;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.checkout {
+  text-align: center;
+}
+.checkout-text {
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.checkout-subtext {
+  color: rgb(134, 132, 132);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.8rem;
+}
+.main-container h2 {
+  margin-bottom: 1rem;
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.85rem;
+}
+
+.input-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.informtion {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.input-label input {
+  border: 0;
+  border-bottom: 1px solid rgb(135, 134, 134);
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+.input-label label {
+  position: absolute;
+  top: 0rem;
+  color: rgb(135, 134, 134);
+  transition: all 0.3s ease;
+  font-family: "Roboto Flex", sans-serif;
+  left: 0;
+  font-size: 1rem;
+}
+.input-label input:focus + label {
+  font-size: 0.9rem;
+  top: -0.1rem;
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.account-info {
+  margin-top: 1rem;
+}
+.country {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-add {
+  margin-top: 1rem;
+}
+.shipping-add input {
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 1rem;
+}
+.state-pin {
+  display: flex;
+}
+#state {
+  width: 80%;
+}
+.state {
+  width: 50%;
+}
+.zip-code {
+  width: 50%;
+}
+#country {
+  margin-top: 1rem;
+  width: 100%;
+  border: 0;
+  background-color: white;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.billing h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.payment-method h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#card-holder {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 1rem;
+}
+#card-no {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 1rem;
+}
+.expiry-date {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 4rem;
+}
+.month {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.year {
+  display: flex;
+
+  width: 33%;
+}
+.cvv-num {
+  display: flex;
+
+  bottom: -0.96rem;
+  width: 33%;
+}
+
+#expiry[name="expiry-month"] {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 0.5rem;
+}
+#expiry[name="expiry-year"] {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 0.5rem;
+}
+#cvv {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 0.5rem;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
+.item-name,
+.item-price {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.eachitem {
+  display: flex;
+  justify-content: space-between;
+}
+.order-sum h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.total-amount {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+.order-button {
+  display: none;
+}
+.order-place {
+  margin-top: 250px;
+  background-color: rgb(35, 35, 57);
+  text-align: center;
+  padding: 1.4rem;
+}
+.order-place a {
+  color: white;
+  font-family: "Roboto Flex", sans-serif;
+  text-decoration: none;
+  margin-right: 4rem;
+}
+.demo-button {
+  display: none;
+}
+
+.billing label {
+  margin-left: 1rem;
+}
+.billing input {
+  outline: 1px solid black;
+}
+
+/* .order-button{
+    width:45%;
+    padding: 8px 8px;
+
+} */
+
+@media (min-width: 768px) {
+  .main-container {
+    margin: 5rem auto 0 auto;
+    font-size: 15px;
+    max-width: 950px;
+  }
+  .informtion {
+    display: flex;
+    margin: 3rem auto 0 auto;
+  }
+  .person-details {
+    width: 48%;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .payment-desc {
+    margin-left: 5rem;
+
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+  }
+  .account-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shipping-add {
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-method {
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-method h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .order-button {
+    margin-top: 3rem;
+    display: block;
+    width: 9rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    border: 2px solid black;
+  }
+  .order-place {
+    display: none;
+  }
+
+  .demo-button {
+    bottom: 0;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-top: 0; /* Change this to remove any margin above */
+    padding: 0; /* Adjust this as necessary */
+  }
+  footer {
+    margin-top: 0; /* Change this to ensure no top margin */
+    padding: 0; /* Remove any padding if it exists */
+  }
+  footer a {
+    font-family: "Roboto Flex", sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(136, 133, 133);
+    font-size: 0.87rem;
+  }
+  .demo-only-button {
+   
+    
+        font-family: 'Roboto Flex', sans-serif;
+        margin-top: 0.812rem;
+        width: 10rem;
+        padding: 0.625rem 1.25rem;
+        font-size: 0.87rem;
+        font-weight: 300;
+        background-color: black;
+        color: white;
+      
+    
+  }
+
+  .state-pin {
+    display: flex;
+    gap: 1rem; /* Add gap for spacing */
+  }
+  .order-place {
+    margin-top: 250px;
+    background-color: rgb(35, 35, 57);
+    text-align: center;
+    padding: 1.4rem;
+  }
+}
+
+@media (max-width: 403px) {
+  body {
+    font-size: 15px;
+  }
+  .state-pin {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+  }
+}
