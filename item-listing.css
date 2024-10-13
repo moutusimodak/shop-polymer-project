@@ -1,3 +1,4 @@
+/* section 1 part */
 .section {
     display: flex;
     flex-direction: column;
@@ -28,20 +29,8 @@
     margin-top: 20px;
   }
   
-  .content button {
-    padding: 10px 34px;
-    background-color: transparent;
-    border: 2px solid black;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    margin-top: 25px;
-  }
-  
-  .content button:hover {
-    background-color: black;
-    color: white;
-  }
+  /* product section */
+
   .products-section {
     padding: 40px 20px;
     text-align: center;
@@ -85,6 +74,8 @@
     font-weight: lighter;
   }
   
+
+  /* --------------------------------------------------------Responsive part-------------------------------------------------------- */
 
   @media (min-width: 1440px) { 
 

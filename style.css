@@ -25,21 +25,6 @@ header a{
 }
 
 
-/* sidebar menu part */
-.checkbtn {
-  top: 20px;
-  left:20px;
-  margin-left: 1%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  display: none;
-}
-
-#check {
-  display: none;
-}
 
 /* Navbar section */
 .navbar {
@@ -67,6 +52,7 @@ header a{
   font-size: 13px;
 }
 
+
 /* cart section */
 .cart {
   display: flex;
@@ -76,6 +62,13 @@ header a{
   top: 20px;
 }
 
+
+.cart img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Left arrow part */
 .arrow{
   display: flex;
   position: absolute;
@@ -83,12 +76,6 @@ header a{
   top:20%
 }
 
-
-
-.cart img {
-  width: 20px;
-  height: 20px;
-}
 
 
 /* Footer Part */
@@ -121,6 +108,26 @@ footer .p {
   background-color: black;
   color: white;
 }
+
+
+/* sidebar menu part */
+.checkbtn {
+  top: 20px;
+  left:20px;
+  margin-left: 1%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+
 
 
 /* --------------------------------------------------Responsive Section-------------------------------------------------- */
@@ -162,8 +169,7 @@ footer .p {
 
 
 
-
-/* Mobile Navbar */
+/* Mobile screen Navbar menu */
 @media screen and (max-width: 768px) {
   .checkbtn {
     display: block;
@@ -173,6 +179,7 @@ footer .p {
     top: 20px;
     cursor: pointer;
     z-index: 2;
+    
   }
 
   .checkbtn i {
@@ -196,7 +203,7 @@ footer .p {
     display: none;
     position: fixed;
     background-color: white;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -205,6 +212,8 @@ footer .p {
     justify-content: center;
     z-index: 1;
     transition: all 0.5s ease;
+    
+   
   }
 
 
@@ -216,6 +225,7 @@ footer .p {
     position: absolute;
     top: 60px;
     width: 100%;
+    
   }
 
   .nav-links a {
@@ -225,5 +235,6 @@ footer .p {
     text-align: center;
     width: 100%;
     display: block;
+    
   }
 }

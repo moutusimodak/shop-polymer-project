@@ -6,25 +6,14 @@ body {
   font-size: 16px;
 }
 
+/* main container heading part */
+
 .main-container {
   height: 100vh;
   width: 90%;
   padding: 1rem;
 }
-.menu img {
-  height: 1.5rem;
-}
-.cart-icon img {
-  height: 1.5rem;
-}
-.title a {
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  font-weight: 600;
-}
+
 
 .checkout {
   text-align: center;
@@ -46,6 +35,8 @@ body {
   font-family: "Roboto Flex", sans-serif;
   font-size: 0.85rem;
 }
+
+/* form part */
 
 .input-label {
   position: relative;
@@ -184,6 +175,9 @@ body {
   border-bottom: 1px solid rgb(130, 128, 128);
   padding: 0.5rem;
 }
+
+/* product item details part */
+
 .item {
   display: flex;
   flex-direction: column;
@@ -234,12 +228,7 @@ body {
   outline: 1px solid black;
 }
 
-/* .order-button{
-    width:45%;
-    padding: 8px 8px;
-
-} */
-
+/* --------------------------------------------------------Responsive part-------------------------------------------------------- */
 @media (min-width: 768px) {
   .main-container {
     margin: 5rem auto 0 auto;
@@ -301,12 +290,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 3rem;
-    margin-top: 0; /* Change this to remove any margin above */
-    padding: 0; /* Adjust this as necessary */
+    margin-top: 0;
+    padding: 0;
   }
   footer {
-    margin-top: 0; /* Change this to ensure no top margin */
-    padding: 0; /* Remove any padding if it exists */
+    margin-top: 0;
+    padding: 0;
   }
   footer a {
     font-family: "Roboto Flex", sans-serif;
@@ -316,23 +305,19 @@ body {
     font-size: 0.87rem;
   }
   .demo-only-button {
-   
-    
-        font-family: 'Roboto Flex', sans-serif;
-        margin-top: 0.812rem;
-        width: 10rem;
-        padding: 0.625rem 1.25rem;
-        font-size: 0.87rem;
-        font-weight: 300;
-        background-color: black;
-        color: white;
-      
-    
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 0.812rem;
+    width: 10rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.87rem;
+    font-weight: 300;
+    background-color: black;
+    color: white;
   }
 
   .state-pin {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
   }
   .order-place {
     margin-top: 250px;
@@ -342,6 +327,11 @@ body {
   }
 }
 
+@media (min-width: 765px) {
+  .navbar {
+    display: none;
+  }
+}
 @media (max-width: 403px) {
   body {
     font-size: 15px;

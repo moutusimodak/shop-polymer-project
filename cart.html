@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="cart.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="https://thumbs.dreamstime.com/z/shopping-bag-icon-vector-illustration-isolated-white-background-blue-paper-cartoon-graphic-271864256.jpg">
-</head>
+    <link
+      rel="icon"
+      href="https://thumbs.dreamstime.com/z/shopping-bag-icon-vector-illustration-isolated-white-background-blue-paper-cartoon-graphic-271864256.jpg"
+    />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <a href="home.html"><h1 class="shop-heading">SHOP</h1></a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </label>
+      <div class="cart">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="item-listing-page.html">Men's Outerwear</a></li>
+          <li><a href="#">Ladies Outerwear</a></li>
+          <li><a href="#">Men's T-Shirts</a></li>
+          <li><a href="#" class="highlight">Ladies T-Shirts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <header>
-            <a href="home.html"><h1 class="shop-heading">SHOP</h1></a>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <div class="cart">
-              <i class="fa-solid fa-cart-shopping"></i>
+    <section class="container">
+      <div class="main">
+        <div class="main-container">
+          <div class="mycart-text">
+            <p>Your Cart</p>
+          </div>
+          <div class="number-of-items">
+            <p>(1 item)</p>
+          </div>
+
+          <div class="item-list">
+            <div class="first-item">
+              <div class="item-image">
+                <img src="images/10-15068B.jpg" alt="image" />
+              </div>
+              <div class="item-details">
+                <div class="item-name-button">
+                  <p class="item-name">Rowan Pullover Hood</p>
+                  <img src="images/cancel.png" alt="cancel-image" />
+                </div>
+                <div class="item-properties">
+                  <div class="qty">
+                    Qty :
+                    <select name="quantity" id="quantities">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                  <p class="size">Size : M</p>
+                  <p class="amount">$50.20</p>
+                  <img
+                    src="../images/cancel.png"
+                    alt="cancelimage"
+                    id="cancel-image"
+                  />
+                </div>
+              </div>
             </div>
-          </header>
- <section class="container">
-          
-        <div class="main">
-            <div class="main-container">
-                <div class="mycart-text">
-                    <p>Your Cart</p>
-                </div>
-                <div class="number-of-items">
-                    <p>(1 item)</p>
-                </div>
 
-                <div class="item-list">
-                    <div class="first-item">
-                        <div class="item-image">
-                            <img src="images/10-15068B.jpg" alt="image">
-                        </div>
-                        <div class="item-details">
-                            <div class="item-name-button">
-                                <p class="item-name">Rowan Pullover Hood</p>
-                                <img src="images/cancel.png" alt="cancel-image">
-                            </div>
-                            <div class="item-properties">
-                                <div class="qty">Qty :
-                                    <select name="quantity" id="quantities">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-
-                                    </select>
-                                </div>
-                                <p class="size">Size : M</p>
-                                <p class="amount">$50.20</p>
-                                <img src="../images/cancel.png" alt="cancelimage" id="cancel-image">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="total">
-                        <p class="total-text">Total :</p>
-                        <p class="total-amount">$171.60</p>
-                        <div class="checkout">
-                          <a href="checkout.html">  <p class="checkout-button">CHECK OUT</p></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
+            <div class="total">
+              <p class="total-text">Total :</p>
+              <p class="total-amount">$171.60</p>
+              <div class="checkout">
+                <a href="checkout.html">
+                  <p class="checkout-button">CHECK OUT</p></a
+                >
+              </div>
             </div>
+          </div>
         </div>
-        <footer>
-            <div class="check-out">
-                <a href="checkout.html"> CHECK OUT</a>
-            </div>
-            <div class="demo-button">
-                <a href="#">Made by Polymer</a>
-                <div class="demo-only-button">DEMO ONLY</div>
-            </div>
-        </footer>
+      </div>
+      <footer>
+        <div class="check-out">
+          <a href="checkout.html"> CHECK OUT</a>
+        </div>
+        <div class="demo-button">
+            <a href="#">Made by Moutusi Modak </a>
+          <div class="demo-only-button">DEMO ONLY</div>
+        </div>
+      </footer>
     </section>
-</body>
-
+  </body>
 </html>
