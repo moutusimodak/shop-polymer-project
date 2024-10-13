@@ -58,18 +58,18 @@ body {
 }
 .input-label label {
   position: absolute;
-  top: 0rem;
   color: rgb(135, 134, 134);
   transition: all 0.3s ease;
   font-family: "Roboto Flex", sans-serif;
   left: 0;
   font-size: 1rem;
 }
-.input-label input:focus + label {
+.input-label input:focus + label, .input-label input:valid +label {
   font-size: 0.9rem;
   top: -0.1rem;
   color: black;
   font-family: "Roboto Flex", sans-serif;
+  transition:  0.3s ease all;
 }
 
 .account-info {
