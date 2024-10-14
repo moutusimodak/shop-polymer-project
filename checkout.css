@@ -59,10 +59,12 @@ body {
 .input-label label {
   position: absolute;
   color: rgb(135, 134, 134);
-  transition: all 0.3s ease;
+
+  transition:  0.3s ease all;
   font-family: "Roboto Flex", sans-serif;
   left: 0;
   font-size: 1rem;
+
 }
 .input-label input:focus + label, .input-label input:valid +label {
   font-size: 0.9rem;

@@ -4,13 +4,13 @@
   padding: 20px;
 }
 
-
 .product-layout {
   display: flex;
   gap: 80px;
 }
 
 /* product image */
+
 .product-image {
   flex: 1;
 }
@@ -39,7 +39,6 @@ h2 {
   margin-bottom: 40px;
   color: #666;
 }
-
 
 /* product form part */
 form {
@@ -71,7 +70,6 @@ label {
   border-color: black;
 }
 
-
 /* Button part */
 
 .btn {
@@ -94,7 +92,6 @@ hr {
   border-top: 1px solid #ddd;
   margin: 8px 0;
 }
-
 
 /* product description */
 
@@ -140,9 +137,8 @@ ul li {
   margin-top: 180px;
 }
 
-
 /* --------------------------------------------------------Responsive part-------------------------------------------------------- */
-@media (min-width: 1440px) {   
+@media (min-width: 1440px) {
   .container {
     max-width: 1200px;
   }
@@ -164,7 +160,7 @@ ul li {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {     
+@media (min-width: 768px) and (max-width: 1440px) {
   .container {
     max-width: 1000px;
   }
@@ -189,7 +185,7 @@ ul li {
   }
 }
 
-@media screen and (max-width: 768px) {       
+@media screen and (max-width: 768px) {
   .container {
     padding: 0;
     margin: 0;
@@ -265,7 +261,7 @@ ul li {
     width: 100vw;
     margin-top: 30px;
     padding: 20px;
-    background-color: #172C50;
+    background-color: #172c50;
     color: white;
     border: none;
     text-align: center;
@@ -273,7 +269,6 @@ ul li {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-  
   }
 
   ul {
@@ -319,7 +314,7 @@ ul li {
     width: 100vw;
     margin-top: 30px;
     padding: 20px;
-    background-color: #172C50;;
+    background-color: #172c50;
     color: white;
     border: none;
     text-align: center;

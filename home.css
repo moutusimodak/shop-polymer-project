@@ -99,31 +99,9 @@
 
   /* --------------------------------------------------------Responsive part-------------------------------------------------------- */
 
-  @media (min-width: 1440px) {   /*Larger screen*/
-
-
-  
-    .shop-heading {
-      font-size: 24px; 
-    }
-  
-    .navbar {
-      flex-direction: row; 
-    }
-
-}
 
 @media (min-width: 768px) and (max-width: 1440px) {     /*medium screen*/
 
-
-    .shop-heading {
-      font-size: 22px; 
-    }
-  
-    .navbar {
-      flex-direction: column; 
-    }
-  
     .content h2{
       font-size: 1em;
     }
