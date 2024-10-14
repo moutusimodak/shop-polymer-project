@@ -86,12 +86,12 @@ footer {
   padding-bottom: 0;
 }
 
-footer .p {
+.sub-footer{
+  font-size:13px; 
+  color: #757575;
   text-align: center;
-  font-size: 5px;
 }
 
-/* Sub Footer Part */
 
 .polymer-btn {
   padding: 10px 26px;

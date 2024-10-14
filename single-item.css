@@ -133,9 +133,7 @@ ul li {
   font-family: Roboto, Noto, sans-serif;
 }
 
-.single-page-footer {
-  margin-top: 180px;
-}
+
 
 /* --------------------------------------------------------Responsive part-------------------------------------------------------- */
 @media (min-width: 1440px) {
@@ -284,10 +282,7 @@ ul li {
     font-size: 12px;
   }
 
-  .single-page-footer {
-    margin-top: 100px;
-  }
-  .single-page-footer {
+  footer{
     display: none;
   }
 }
