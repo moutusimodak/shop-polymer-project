@@ -212,6 +212,8 @@ body {
   background-color: rgb(35, 35, 57);
   text-align: center;
   padding: 1.4rem;
+  width: 100%;
+  bottom: 0;
 }
 .order-place a {
   color: white;
@@ -338,9 +340,33 @@ body {
   body {
     font-size: 15px;
   }
+
+
   .state-pin {
     display: flex;
     gap: 1rem;
     white-space: nowrap;
   }
+  .order-sum {
+    padding-bottom: 4rem; 
+  }
+  .order-place {
+   
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+  }
+
+
+  .order-button {
+    margin-top: 2rem; 
+    width: 100%;
+  }
+
+  footer {
+    padding-bottom: 2rem; 
+  }
 }
+
+
