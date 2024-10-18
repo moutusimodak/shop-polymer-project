@@ -12,6 +12,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
+
 }
 
 .shop-heading {
@@ -32,9 +33,10 @@ header a{
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  position: relative;
-  flex-direction: column;
+  /* padding: 20px; */
+  margin-top: 20px;
+  /* position: relative; */
+  /* flex-direction: row; */
 }
 
 .nav-links {
@@ -140,9 +142,9 @@ footer {
     font-size: 24px; 
   }
 
-  .navbar {
+  /* .navbar {
     flex-direction: row; 
-  }
+  } */
 }
  
 
@@ -156,9 +158,9 @@ footer {
     font-size: 22px; 
   }
 
-  .navbar {
-    flex-direction: column; 
-  }
+  /* .navbar {
+    flex-direction: row; 
+  } */
 
   .content h2{
     font-size: 1em;

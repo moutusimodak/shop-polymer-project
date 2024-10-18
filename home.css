@@ -44,6 +44,27 @@
     color: white;
   }
   
+  /* Button-like styling for anchor tags */
+.btn-link {
+  display: inline-block;
+  padding: 10px 34px;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn-link:hover {
+  background-color: black;
+  color: white;
+}
+
   /* Main section ( T- shirt) */
   
   .tshirt-section {

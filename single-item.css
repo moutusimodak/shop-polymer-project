@@ -80,6 +80,9 @@ label {
   cursor: pointer;
   width: 35%;
   margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
 }
 
 .btn:hover {
@@ -180,6 +183,7 @@ ul li {
 
   .btn {
     width: 40%;
+   
   }
 }
 
@@ -267,8 +271,12 @@ ul li {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    position: fixed;
+    z-index: 1000;
   }
-
+  .container {
+    padding-bottom: 120px;
+  }
   ul {
     padding-left: 50px;
     font-size: 12px;
@@ -317,5 +325,11 @@ ul li {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .container {
+    padding-bottom: 120px; 
   }
 }

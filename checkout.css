@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,7 @@ body {
   height: 100vh;
   width: 90%;
   padding: 1rem;
+ 
 }
 
 
@@ -43,6 +46,7 @@ body {
   display: flex;
   align-items: center;
   height: 4rem;
+  margin-bottom: 1rem;
 }
 
 .informtion {
@@ -55,15 +59,21 @@ body {
   outline: none;
   padding: 0.5rem;
   width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 .input-label label {
-  position: absolute;
-  color: rgb(135, 134, 134);
 
-  transition:  0.3s ease all;
-  font-family: "Roboto Flex", sans-serif;
+  position: absolute;
   left: 0;
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: rgb(135, 134, 134);
+  font-family: "Roboto Flex", sans-serif;
   font-size: 1rem;
+  transition: all 0.3s ease; 
+  pointer-events: none;
 
 }
 .input-label input:focus + label, .input-label input:valid +label {
@@ -71,7 +81,7 @@ body {
   top: -0.1rem;
   color: black;
   font-family: "Roboto Flex", sans-serif;
-  transition:  0.3s ease all;
+  /* transform: translateY(0); */
 }
 
 .account-info {
@@ -135,7 +145,7 @@ body {
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
   display: flex;
-  flex-direction: row;
+  gap:1rem;
   align-items: flex-end;
   height: 4rem;
 }
@@ -146,16 +156,29 @@ body {
 }
 .year {
   display: flex;
-
+  flex-direction: column;
   width: 33%;
 }
 .cvv-num {
   display: flex;
-
+  flex-direction: column;
   bottom: -0.96rem;
   width: 33%;
 }
 
+
+.cvv-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+}
+
+.expiry-date label {
+  margin-bottom: 0.3rem; 
+  font-size: 0.9rem;
+  color: rgb(135, 134, 134);
+  font-family: "Roboto Flex", sans-serif;
+}
 #expiry[name="expiry-month"] {
   width: 90%;
   border: 0;
@@ -179,7 +202,10 @@ body {
 }
 
 /* product item details part */
-
+.order-sum {
+  margin-top: 2rem;
+  padding-bottom: 7rem; 
+}
 .item {
   display: flex;
   flex-direction: column;
@@ -208,18 +234,21 @@ body {
   display: none;
 }
 .order-place {
-  margin-top: 250px;
+
   background-color: rgb(35, 35, 57);
   text-align: center;
   padding: 1.4rem;
   width: 100%;
+  position: fixed; 
   bottom: 0;
+  left: 0;
+  right: 0;
 }
 .order-place a {
   color: white;
   font-family: "Roboto Flex", sans-serif;
   text-decoration: none;
-  margin-right: 4rem;
+  /* margin-right: 4rem; */
 }
 .demo-button {
   display: none;
@@ -232,12 +261,15 @@ body {
   outline: 1px solid black;
 }
 
+
+
 /* --------------------------------------------------------Responsive part-------------------------------------------------------- */
 @media (min-width: 768px) {
   .main-container {
     margin: 5rem auto 0 auto;
     font-size: 15px;
     max-width: 950px;
+    padding: 0;
   }
   .informtion {
     display: flex;
@@ -284,6 +316,8 @@ body {
   }
   .order-place {
     display: none;
+    position: static;
+    margin-top: auto;
   }
 
   .demo-button {
